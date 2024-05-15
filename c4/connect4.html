@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- last page for score display -->
+    <div class="blurLast"></div>
+    <div class="modalLast">
+        <p>who win</p>
+        <table>
+        </table>
+        <div id="anotherPlay">
+            <a href="./startbox.html"><i class="fas fa-home"></i>
+            </a>
+            <button type="reset" id="playAgain">play again</button>
+        </div>
+    </div>
+    <div class="blurLast"></div>
+    <!-- main page -->
+    <main>
+        <div id="title">
+            <a id="homeButten" href="./startbox.html"><i class="fas fa-home"></i>
+            </a>
+            <h1>CONNECT 4</h1>
+        </div>
+        <div id="vsBoard">
+            <span id="player1Name">sina</span>
+            <img id="player1Image">
+            <span id="vs">vs</span>
+            <img src="https://source.boringavatars.com/sunset/60/computer">
+            <span id="player2Name">computer</span>
+        </div>
+        <p><span id="playernameturn"></span><span>, it's your turn...</span></p>
+
+        <!-- game board -->
+        <div id="shadowContainer"></div>
+        <div id="cellcontainer">
+            <div class="cell topRow" data-x="0" data-y="6"></div>
+            <div class="cell topRow" data-x="1" data-y="6"></div>
+            <div class="cell topRow" data-x="2" data-y="6"></div>
+            <div class="cell topRow" data-x="3" data-y="6"></div>
+            <div class="cell topRow" data-x="4" data-y="6"></div>
+            <div class="cell topRow" data-x="5" data-y="6"></div>
+            <div class="cell topRow" data-x="6" data-y="6"></div>
+            <div class="cell" data-x="0" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="1" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="2" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="3" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="4" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="5" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="6" data-y="5"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="0" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="1" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="2" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="3" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="4" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="5" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="6" data-y="4"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="0" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="1" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="2" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="3" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="4" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="5" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="6" data-y="3"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="0" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="1" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="2" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="3" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="4" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="5" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="6" data-y="2"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="0" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="1" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="2" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="3" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="4" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="5" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="6" data-y="1"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="0" data-y="0"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="1" data-y="0"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="2" data-y="0"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="3" data-y="0"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="4" data-y="0"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="5" data-y="0"><img src="./images/Untitled-3.png"></div>
+            <div class="cell" data-x="6" data-y="0"><img src="./images/Untitled-3.png"></div>
+        </div>
+    </main>
+
+</body>
+<script type="module" src="./main.js"></script>
+
+</html>
